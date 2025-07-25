@@ -61,8 +61,6 @@ button {
     font-family: "Inter", sans-serif;
 }
 
-
-
 /* Header area design  */
 .header-top {
     display: flex;
@@ -194,7 +192,8 @@ button {
     padding: 15px 30px;
     transition-duration: 0.4s;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.05, 1.05);
     transition-duration: 0.4s;
 }
@@ -239,7 +238,6 @@ button {
 .list-items li:nth-child(n) {
     margin-top: 20px;
 }
-
 
 /* Latest Deals  */
 .latest-deal {
@@ -340,31 +338,34 @@ button {
     border-radius: 10px;
 }
 
-
 /* Newslatter area  */
-.newslatter{
+.newslatter {
     background-image: url(assets/news-letter-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
 }
-.newscont{
+
+.newscont {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
 }
-.subcontainer h2{
+
+.subcontainer h2 {
     font-size: 3.1rem;
     color: #ffffff;
     font-weight: 700;
     text-align: center;
 }
+
 form {
     display: flex;
     max-width: 800px;
     margin: 20px auto;
 }
+
 form input[type="email"] {
     padding: 15px;
     width: 100%;
@@ -372,6 +373,7 @@ form input[type="email"] {
     outline: none;
     font-size: 1rem;
 }
+
 form button {
     padding: 15px 30px;
     border: none;
@@ -381,25 +383,41 @@ form button {
     cursor: pointer;
 }
 
-
 /* Footer  */
-
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
+    margin: 50px auto;
+    gap: 20px;
 }
-.footer-menu-1, .footer-menu-2{
+
+.footer-logo {
+    max-width: 32%;
+}
+
+.footer-menu-1,
+.footer-menu-2 {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
-.footer-nav-link{
+
+.footer-nav-link {
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
-    color: var();
+    color: var(--color-02);
+}
+
+.social-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 36px;
+    height: 36px;
 }
 
 
@@ -420,16 +438,17 @@ form button {
         margin-top: 30px;
         gap: 40px;
     }
+
     .hero-left,
     .hero-right,
     .hero-right img {
         width: 100%;
     }
+
     /* Flower area  */
     .flower {
         gap: 40px;
     }
-
 }
 
 
@@ -461,21 +480,32 @@ form button {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
     .badge {
         display: none;
     }
+
     /* Latest deal  */
     .latest-deal {
         margin: 60px 0;
     }
+
     .promo-left {
         gap: 20px;
     }
+
     .promo {
         gap: 10px;
     }
 
+    /* Footer  */
+    .footer {
+        flex-direction: column;
+    }
 
+    .footer-logo {
+        max-width: 100%;
+    }
 }
 
 
@@ -521,35 +551,36 @@ form button {
     .promo {
         flex-direction: column;
     }
+
     .promo-card-1,
     .promo-card-2,
     .promo-right {
         height: 200px;
         flex: none;
     }
+
     .promo-left h4,
     .promo-right h2 {
         font-size: 1.25rem;
     }
+
     .promo-left a,
     .promo-right a {
         font-size: 0.9rem;
     }
+
     .promo {
         margin-top: 40px;
     }
 
     /* Newslatter  */
-    .subcontainer h2{
+    .subcontainer h2 {
         font-size: 1.25rem;
     }
-    .newslatter{
+
+    .newslatter {
         height: 280px;
     }
-
-
-
-
 }
 
 

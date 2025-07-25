@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Flower Shop</title>
 
         <!-- Font-awosome CDN  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,7 +34,10 @@
                 </nav>
                 <!-- Mobile Menu  -->
                 <div class="mobile-menu">
-                    <i class="fa-solid fa-bars menu-icon-mobile"></i>
+                    <a href="#" class="shop-card">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>Cart ($56)</span>
+                    </a>
                 </div>
             </div>
 
@@ -71,49 +74,49 @@
                         <img src="assets/sample-flower-image.png" alt="">
                         <h3 class="card-heading">Lily Blossom</h3>
                         <h4 class="card-pera">20 USD</h4>
-                        <button class="btn ">ADD TO CART</button>
+                        <button class="btn" onclick="addToCart()">ADD TO CART</button>
                     </div>
                     <div class="card">
                         <img src="assets/sample-flower-image.png" alt="">
                         <h3 class="card-heading">Lily Blossom</h3>
                         <h4 class="card-pera">20 USD</h4>
-                        <button class="btn ">ADD TO CART</button>
+                        <button class="btn" onclick="addToCart()">ADD TO CART</button>
                     </div>
                     <div class="card">
                         <img src="assets/sample-flower-image.png" alt="">
                         <h3 class="card-heading">Lily Blossom</h3>
                         <h4 class="card-pera">20 USD</h4>
-                        <button class="btn ">ADD TO CART</button>
+                        <button class="btn" onclick="addToCart()">ADD TO CART</button>
                     </div>
                     <div class="card">
                         <img src="assets/sample-flower-image.png" alt="">
                         <h3 class="card-heading">Lily Blossom</h3>
                         <h4 class="card-pera">20 USD</h4>
-                        <button class="btn ">ADD TO CART</button>
+                        <button class="btn" onclick="addToCart()">ADD TO CART</button>
                     </div>
                     <div class="card">
                         <img src="assets/sample-flower-image.png" alt="">
                         <h3 class="card-heading">Lily Blossom</h3>
                         <h4 class="card-pera">20 USD</h4>
-                        <button class="btn ">ADD TO CART</button>
+                        <button class="btn" onclick="addToCart()">ADD TO CART</button>
                     </div>
                     <div class="card">
                         <img src="assets/sample-flower-image.png" alt="">
                         <h3 class="card-heading">Lily Blossom</h3>
                         <h4 class="card-pera">20 USD</h4>
-                        <button class="btn ">ADD TO CART</button>
+                        <button class="btn" onclick="addToCart()">ADD TO CART</button>
                     </div>
                     <div class="card">
                         <img src="assets/sample-flower-image.png" alt="">
                         <h3 class="card-heading">Lily Blossom</h3>
                         <h4 class="card-pera">20 USD</h4>
-                        <button class="btn ">ADD TO CART</button>
+                        <button class="btn" onclick="addToCart()">ADD TO CART</button>
                     </div>
                     <div class="card">
                         <img src="assets/sample-flower-image.png" alt="">
                         <h3 class="card-heading">Lily Blossom</h3>
                         <h4 class="card-pera">20 USD</h4>
-                        <button class="btn ">ADD TO CART</button>
+                        <button class="btn" onclick="addToCart()">ADD TO CART</button>
                     </div>
                 </div>
                 
@@ -136,7 +139,7 @@
             </section>
 
             <!-- Latest Deals  -->
-             <section class="latest-deal">
+            <section class="latest-deal">
                 <!-- Common class as our plant section  -->
                 <div class="plant-description">
                     <h3 class="plant-heading text-center noto-serif"><span class="plant-heading-2">Latest</span> Deals</h3>
@@ -172,12 +175,12 @@
                 </div>    
 
 
-             </section>
+            </section>
 
         </main>
 
         <!-- Newslater area  -->
-         <section class="newslatter">
+        <section class="newslatter">
             <div class="container newscont">
                 <div class="subcontainer">
                     <h2 class="noto-serif">Join the colorful Bunch</h2>
@@ -187,11 +190,14 @@
                     </form>
                 </div>
             </div>
-         </section>
+        </section>
 
-         <footer class="footer container">
+        
+        <!-- Footer area  -->
+        <footer class="footer container">
             <div class="footer-logo">
                 <img src="assets/logo.png" alt="">
+                <p class="peragraph">Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
             </div>
             <nav class="footer-menu-1">
                 <li><a class="footer-nav-link" href="#">Home</a></li>
@@ -210,13 +216,18 @@
             <div class="social-icon">
                 <img src="assets/icon-facebook.png" alt="">
                 <img src="assets/icon-linkedin.png" alt="">
-                <img src="assets/icon-linkedin.png" alt="">
                 <img src="assets/icon-twitter.png" alt="">
                 <img src="assets/icon-youtube.png" alt="">
             </div>
-         </footer>
+        </footer>
 
-        
+
+        <!-- JavaScript -->
+        <script>
+            function addToCart() {
+            alert("Flower Added to Cart");
+            }
+        </script>
 
     </body>
 </html>
